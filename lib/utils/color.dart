@@ -18,7 +18,7 @@ Color darkpreColor = Colors.white;
 Color text1Color = const Color(0xff2D2D3A);
 Color darktext1Color = const Color(0xffDADADA);
 
-Color darkbColor = const Color(0xfff1f5f6);
+Color darkbColor = const Color.fromARGB(125, 214, 255, 187);
 Color bColor = const Color(0xff3d3d4e);
 
 Color whiteColor = Colors.white;

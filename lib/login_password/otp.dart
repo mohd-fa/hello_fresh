@@ -1,3 +1,4 @@
+import 'package:hello_fresh/bottom.dart';
 import 'package:hello_fresh/login_password/login.dart';
 import 'package:hello_fresh/utils/colornotifire.dart';
 import 'package:hello_fresh/utils/custombutton.dart';
@@ -146,7 +147,7 @@ class _OtpState extends State<Otp> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return Login();
+                          return Bottom();
                         },
                       ),
                     );
@@ -165,7 +166,7 @@ class _OtpState extends State<Otp> {
       height: height / 15,
       width: width / 8,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 214, 255, 187),
+        color: Color.fromARGB(125, 214, 255, 187),
         borderRadius: BorderRadius.all(
           Radius.circular(10),
         ),

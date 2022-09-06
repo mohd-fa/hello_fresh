@@ -175,7 +175,7 @@ class _LoginState extends State<Login> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacement(
+                  Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) {
@@ -205,7 +205,7 @@ class _LoginState extends State<Login> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: Container(
                 decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 214, 255, 187),
+                  color: Color.fromARGB(125, 214, 255, 187),
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
                   ),

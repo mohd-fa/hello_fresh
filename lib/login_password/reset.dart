@@ -1,3 +1,4 @@
+import 'package:hello_fresh/bottom.dart';
 import 'package:hello_fresh/login_password/login.dart';
 import 'package:hello_fresh/utils/string.dart';
 import 'package:flutter/material.dart';
@@ -199,7 +200,7 @@ class _ResetState extends State<Reset> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: GestureDetector(
                 onTap: () {
-                  Get.to(const Login());
+                  Get.to(const Bottom());
                 },
                 child: Custombutton.button(
                     notifire.getprocolor, CustomStrings.submitig, width),

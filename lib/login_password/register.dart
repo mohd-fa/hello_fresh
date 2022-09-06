@@ -1,4 +1,5 @@
 // import 'package:hello_fresh/home/bottom.dart';
+import 'package:hello_fresh/bottom.dart';
 import 'package:hello_fresh/login_password/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -252,7 +253,7 @@ class _RegisterState extends State<Register> {
                 GestureDetector(
                   onTap: () {
                     Get.to(
-                      const Login(),
+                      const Bottom(),
                     );
                   },
                   child: Container(
