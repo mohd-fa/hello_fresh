@@ -9,10 +9,10 @@ Color darkcardColor = const Color(0xff3d3d4e);
 Color textColor = const Color(0xff2D2D3A);
 Color darktextColor = const Color(0xff2D2D3A);
 
-Color proColor = const Color(0xff0065ff);
-Color darkproColor = const Color(0xff0065ff);
+Color proColor = const Color.fromARGB(255, 94, 173, 50);
+Color darkproColor = Color.fromARGB(255, 94, 173, 50);
 
-Color preColor = const Color(0xff0065ff);
+Color preColor = Color.fromARGB(255, 94, 173, 50);
 Color darkpreColor = Colors.white;
 
 Color text1Color = const Color(0xff2D2D3A);
@@ -44,5 +44,3 @@ Color darkpinkColor = const Color(0xff393948);
 
 Color darkColor = Colors.black;
 Color lightColor = Colors.white;
-
-

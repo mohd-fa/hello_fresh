@@ -86,7 +86,7 @@ class _RegisterState extends State<Register> {
               ],
             ),
             Image.asset(
-              "image/login.png",
+              "image/cleans.png",
               height: height / 4,
             ),
             Padding(
@@ -229,7 +229,9 @@ class _RegisterState extends State<Register> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: GestureDetector(
                   onTap: () {
-                    // Get.to(const Bottom(),);
+                    Get.to(
+                      const Login(),
+                    );
                   },
                   child: Custombutton.button(
                       notifire.getprocolor, CustomStrings.continues, width)),

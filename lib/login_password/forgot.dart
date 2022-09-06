@@ -78,7 +78,7 @@ class _ForgotState extends State<Forgot> {
               ],
             ),
             Image.asset(
-              "image/forget.png",
+              "image/cleans.png",
               height: height / 4,
             ),
             Padding(

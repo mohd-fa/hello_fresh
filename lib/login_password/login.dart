@@ -205,11 +205,13 @@ class _LoginState extends State<Login> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: Container(
                 decoration: const BoxDecoration(
-                  color: Color(0xfff1f5f6),
+                  color: Color.fromARGB(255, 214, 255, 187),
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
                   ),
                 ),
+                height: height / 17,
+                width: width,
                 child: Row(
                   children: [
                     Padding(
@@ -226,8 +228,6 @@ class _LoginState extends State<Login> {
                     ),
                   ],
                 ),
-                height: height / 17,
-                width: width,
               ),
             ),
             SizedBox(
