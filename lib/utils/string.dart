@@ -1,11 +1,13 @@
 class CustomStrings {
-
   static const String laundryservice = 'Laundry Service';
   static const String onbonding1 = 'Laundry include washing';
   static const String onbonding3 = "Keeping helps machine";
-  static const String onbondings1 = 'laundry storage tips to keep your family safe from any detergent-related accidents.';
-  static const String onbondings2 = 'Too little can leave your clothing dirty and too much can leave a residue.';
-  static const String onbondings3 = 'There is not a whole bunch of prep for drying. In most cases, you just throw everything from the washer into the dryer';
+  static const String onbondings1 =
+      'laundry storage tips to keep your family safe from any detergent-related accidents.';
+  static const String onbondings2 =
+      'Too little can leave your clothing dirty and too much can leave a residue.';
+  static const String onbondings3 =
+      'There is not a whole bunch of prep for drying. In most cases, you just throw everything from the washer into the dryer';
   static const String onbonding2 = "it's not stuff your washer";
   static const String by = "By signing up, you're agree to our ";
   static const String sign = 'Please enter your information below.';
@@ -22,7 +24,8 @@ class CustomStrings {
   static const String payments = 'Payment Method';
   static const String card = 'Add New Card';
   static const String submitig = 'Submitting...';
-  static const String fdetails = "Don't worry ! It happens.Please enter the address associated with your account.";
+  static const String fdetails =
+      "Don't worry ! It happens.Please enter the address associated with your account.";
   static const String tc = ' Terms & Conditions';
   static const String pri = ' Privacy Policy';
   static const String can = 'You can also login with';
@@ -46,7 +49,7 @@ class CustomStrings {
   static const String start = 'Start';
   static const String signup = 'Sign up';
   static const String register = 'Register';
-  static const String login = 'Login';
+  static const String login = 'Login / Sign up';
   static const String need = 'What do you need today?';
   static const String cleaning = 'Dry Clean';
   static const String based = 'Based on your recent activity';
@@ -101,7 +104,8 @@ class CustomStrings {
   static const String am3 = "1:31 am";
   static const String seen = "Seen";
   static const String okay = "Okay, I will do it tonight!";
-  static const String yeah =  "Yeah I am ready to start! Please send me the required files and also please invite me on the campaign.";
+  static const String yeah =
+      "Yeah I am ready to start! Please send me the required files and also please invite me on the campaign.";
   static const String awesome = "Awesome, You are ready now?";
   static const String hi = "Hi, Thanks for your message. The answer is yes!";
   static const String message = 'Messages';
@@ -119,19 +123,22 @@ class CustomStrings {
   static const String fn = 'Full Name';
   static const String pickuptime = 'Schedule Time';
   static const String select = 'Select A Service';
-  static const String lorem = '   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
+  static const String lorem =
+      '   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
   static const String selects = 'Make default shipping address';
   static const String checkout = 'Checkout';
   static const String pro = 'The Provincial';
   static const String review = 'Reviews';
   static const String road = '216/C East Road';
-  static const String lorem2 = '     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages';
+  static const String lorem2 =
+      '     It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages';
   static const String district = 'District';
   static const String pn = 'Phone Number';
   static const String ad1 = 'Address Line 1';
   static const String ad2 = 'Address Line 2';
   static const String ward = 'Ward';
-  static const String us = 'You can hire Professional dry cleaning and laundry services in the same budget or less than any other local laundry services near near you. Our Service Providers will handle your clothes...';
+  static const String us =
+      'You can hire Professional dry cleaning and laundry services in the same budget or less than any other local laundry services near near you. Our Service Providers will handle your clothes...';
   static const String about = 'About Us';
   static const String dtime = 'Delivery Time';
   static const String address = 'Address';
@@ -148,7 +155,8 @@ class CustomStrings {
   static const String voucher = 'Add Voucher';
   static const String confirms = 'Confirm Payment';
   static const String confirmo = 'Confirm Order';
-  static const String addressd = 'No 16 abula oja , University road yaba , Lagos.';
+  static const String addressd =
+      'No 16 abula oja , University road yaba , Lagos.';
   static const String addressp = 'Pickup Address';
   static const String addressa = 'Delivery Address';
   static const String confirm = 'Confirm';
@@ -232,6 +240,6 @@ class CustomStrings {
   static const String code = 'VOUCHER CODE';
   static const String credit = '**** **** **** 0231';
   static const String note = 'Additional Notes';
-  static const String render = 'We render laundry,cleaning and house keeping services.both for short or long term and provide house keepers for our client.we render laundry,cleaning and house keeping services. both for short or long term and provide house keepers for our client.';
-
+  static const String render =
+      'We render laundry,cleaning and house keeping services.both for short or long term and provide house keepers for our client.we render laundry,cleaning and house keeping services. both for short or long term and provide house keepers for our client.';
 }

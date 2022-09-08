@@ -1,4 +1,4 @@
-import 'package:hello_fresh/login_password/forgot.dart';
+import 'package:hello_fresh/bottom.dart';
 import 'package:hello_fresh/login_password/otp.dart';
 import 'package:hello_fresh/login_password/register.dart';
 import 'package:flutter/material.dart';
@@ -56,92 +56,7 @@ class _LoginState extends State<Login> {
         child: Column(
           children: [
             SizedBox(
-              height: height / 13,
-            ),
-            Image.asset(
-              "image/cleans.png",
-              height: height / 4,
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: width / 15),
-              child: Row(
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        CustomStrings.login,
-                        style: TextStyle(
-                            fontFamily: 'Gilroy Bold',
-                            color: notifire.getdarkscolor,
-                            fontSize: height / 25),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: height / 30,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: width / 20,
-                ),
-                const Icon(
-                  Icons.alternate_email,
-                  color: Colors.grey,
-                ),
-                SizedBox(
-                  width: width / 40,
-                ),
-                Customtextfild.textField(
-                  "Email ID",
-                  notifire.getwhitecolor,
-                  width / 1.3,
-                ),
-              ],
-            ),
-            SizedBox(
-              height: height / 30,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: width / 20,
-                ),
-                const Icon(
-                  Icons.lock_outline,
-                  color: Colors.grey,
-                ),
-                SizedBox(
-                  width: width / 40,
-                ),
-                Container(
-                  color: Colors.transparent,
-                  height: height / 20,
-                  width: width / 1.3,
-                  child: Customtextfild2.textField(
-                    "Password",
-                    notifire.getwhitecolor,
-                    GestureDetector(
-                        onTap: () {
-                          _toggle();
-                        },
-                        child: _obscureText
-                            ? const Icon(Icons.remove_red_eye_rounded)
-                            : const Icon(
-                                Icons.remove_red_eye_outlined,
-                                color: Colors.grey,
-                              )),
-                    _obscureText,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: height / 30,
+              height: height / 12,
             ),
             Row(
               children: [
@@ -149,27 +64,76 @@ class _LoginState extends State<Login> {
                 GestureDetector(
                   onTap: () {
                     Get.to(
-                      const Forgot(),
+                      const Bottom(),
                     );
                   },
                   child: Container(
+                    padding: EdgeInsets.only(right: width / 20),
                     color: Colors.transparent,
                     child: Text(
-                      CustomStrings.forgot,
+                      CustomStrings.skip,
                       style: TextStyle(
-                          fontFamily: 'Gilroy Bold',
+                          fontFamily: 'Gilroy Medium',
                           color: notifire.getprocolor,
                           fontSize: height / 50),
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: width / 20,
-                ),
               ],
             ),
             SizedBox(
               height: height / 30,
+            ),
+            Image.asset(
+              "image/cleans.png",
+              height: height / 4,
+            ),
+            // Container(
+            //   padding: EdgeInsets.symmetric(horizontal: width / 15),
+            //   alignment: Alignment.centerLeft,
+            //   child: Text(
+            //     CustomStrings.login,
+            //     style: TextStyle(
+            //         fontFamily: 'Gilroy Bold',
+            //         color: notifire.getdarkscolor,
+            //         fontSize: height / 25),
+            //   ),
+            // ),
+            SizedBox(
+              height: height / 30,
+            ),
+            Container(
+              padding: EdgeInsets.only(left: width / 20),
+              alignment: Alignment.centerLeft,
+              child: Text(
+                CustomStrings.pn,
+                style: TextStyle(
+                    fontFamily: 'Gilroy Bold',
+                    color: notifire.getdarkscolor,
+                    fontSize: height / 40),
+              ),
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: width / 20,
+                ),
+                const Icon(
+                  Icons.phone,
+                  color: Colors.grey,
+                ),
+                SizedBox(
+                  width: width / 40,
+                ),
+                Customtextfild.textField(
+                  "Enter Phone Number",
+                  notifire.getwhitecolor,
+                  width / 1.3,
+                ),
+              ],
+            ),
+            SizedBox(
+              height: height / 10,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: width / 15),
@@ -190,77 +154,6 @@ class _LoginState extends State<Login> {
             ),
             SizedBox(
               height: height / 30,
-            ),
-            Text(
-              "OR",
-              style: TextStyle(
-                  fontFamily: 'Gilroy Medium',
-                  color: Colors.grey,
-                  fontSize: height / 50),
-            ),
-            SizedBox(
-              height: height / 30,
-            ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: width / 15),
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Color.fromARGB(125, 214, 255, 187),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(10),
-                  ),
-                ),
-                height: height / 17,
-                width: width,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: width / 10, vertical: height / 80),
-                      child: Image.asset("image/google.png"),
-                    ),
-                    Text(
-                      CustomStrings.googles,
-                      style: TextStyle(
-                          fontFamily: 'Gilroy Medium',
-                          color: notifire.gettextcolor,
-                          fontSize: height / 50),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: height / 30,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  CustomStrings.newto,
-                  style: TextStyle(
-                      fontFamily: 'Gilroy Medium',
-                      color: Colors.grey,
-                      fontSize: height / 50),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Get.to(
-                      const Register(),
-                    );
-                  },
-                  child: Container(
-                    color: Colors.transparent,
-                    child: Text(
-                      CustomStrings.register,
-                      style: TextStyle(
-                          fontFamily: 'Gilroy Medium',
-                          color: notifire.getprocolor,
-                          fontSize: height / 50),
-                    ),
-                  ),
-                ),
-              ],
             ),
           ],
         ),
