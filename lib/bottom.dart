@@ -43,7 +43,6 @@ class _BottomState extends State<Bottom> {
     const Order(),
     const Order(),
     const Order(),
-    const Order(),
   ];
 
   @override
@@ -93,7 +92,9 @@ class _BottomState extends State<Bottom> {
                           height: height / 30),
                     ),
                     selectedColor: notifire.getprocolor,
-                    title: const Text(""),
+                    title: _selectedIndex == 0
+                        ? const Text("Home")
+                        : const Text(""),
                   ),
                   SalomonBottomBarItem(
                     icon: Padding(
@@ -107,22 +108,9 @@ class _BottomState extends State<Bottom> {
                               : Colors.black,
                           height: height / 30),
                     ),
-                    title: const Text(""),
-                    selectedColor: notifire.getprocolor,
-                  ),
-                  SalomonBottomBarItem(
-                    icon: Padding(
-                      padding: EdgeInsets.only(
-                          left: width / 100,
-                          top: width / 100,
-                          bottom: width / 100),
-                      child: Image.asset("image/chat.png",
-                          color: _selectedIndex == 2
-                              ? notifire.getprocolor
-                              : Colors.black,
-                          height: height / 30),
-                    ),
-                    title: const Text(""),
+                    title: _selectedIndex == 1
+                        ? const Text("Order")
+                        : const Text(""),
                     selectedColor: notifire.getprocolor,
                   ),
                   SalomonBottomBarItem(
@@ -132,12 +120,14 @@ class _BottomState extends State<Bottom> {
                           top: width / 100,
                           bottom: width / 100),
                       child: Image.asset("image/setting.png",
-                          color: _selectedIndex == 3
+                          color: _selectedIndex == 2
                               ? notifire.getprocolor
                               : Colors.black,
                           height: height / 30),
                     ),
-                    title: const Text(""),
+                    title: _selectedIndex == 2
+                        ? const Text("Settings")
+                        : const Text(""),
                     selectedColor: notifire.getprocolor,
                   ),
                 ],

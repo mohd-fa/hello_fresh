@@ -46,7 +46,7 @@ class _SpleshscreenState extends State<Spleshscreen> {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 23, 167, 21),
+      backgroundColor: const Color.fromARGB(255, 23, 167, 21),
       body: Stack(
         children: [
           Image.asset(

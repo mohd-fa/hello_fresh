@@ -1,21 +1,21 @@
-import 'package:hello_fresh/order/detailsorder.dart';
+import 'package:hello_fresh/utils/media.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../utils/colornotifire.dart';
-import '../utils/media.dart';
 import '../utils/string.dart';
+import 'detailsorder.dart';
 
-class Delivered extends StatefulWidget {
-  const Delivered({Key? key}) : super(key: key);
+class OrderList extends StatefulWidget {
+  const OrderList({Key? key}) : super(key: key);
 
   @override
-  State<Delivered> createState() => _DeliveredState();
+  State<OrderList> createState() => _OrderListState();
 }
 
-class _DeliveredState extends State<Delivered> {
+class _OrderListState extends State<OrderList> {
   late ColorNotifire notifire;
 
   getdarkmodepreviousstate() async {
@@ -59,10 +59,78 @@ class _DeliveredState extends State<Delivered> {
                     child: Column(
                       children: [
                         orders(
+                          Container(
+                            height: height / 25,
+                            width: width / 3,
+                            decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              borderRadius: const BorderRadius.all(
+                                Radius.circular(10),
+                              ),
+                              border: Border.all(
+                                  color: const Color(0xffFE7058), width: 1.5),
+                            ),
+                            child: Center(
+                              child: Text(
+                                CustomStrings.trackorder,
+                                style: TextStyle(
+                                    color: const Color(0xffFE7058),
+                                    fontFamily: 'Gilroy Bold',
+                                    fontSize: height / 47),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: height / 100,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: height / 60,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: notifire.getbcolor,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(15),
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        orders(
                           Text(
                             CustomStrings.delivered,
                             style: TextStyle(
                                 color: const Color(0xff4BD37B),
+                                fontFamily: 'Gilroy Bold',
+                                fontSize: height / 47),
+                          ),
+                        ),
+                        SizedBox(
+                          height: height / 100,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: height / 60,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: notifire.getbcolor,
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(15),
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        orders(
+                          Text(
+                            CustomStrings.canceled,
+                            style: TextStyle(
+                                color: const Color(0xffFF1333),
                                 fontFamily: 'Gilroy Bold',
                                 fontSize: height / 47),
                           ),

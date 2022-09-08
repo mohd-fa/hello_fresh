@@ -10,9 +10,9 @@ Color textColor = const Color(0xff2D2D3A);
 Color darktextColor = const Color(0xff2D2D3A);
 
 Color proColor = const Color.fromARGB(255, 94, 173, 50);
-Color darkproColor = Color.fromARGB(255, 94, 173, 50);
+Color darkproColor = const Color.fromARGB(255, 94, 173, 50);
 
-Color preColor = Color.fromARGB(255, 94, 173, 50);
+Color preColor = const Color.fromARGB(255, 94, 173, 50);
 Color darkpreColor = Colors.white;
 
 Color text1Color = const Color(0xff2D2D3A);

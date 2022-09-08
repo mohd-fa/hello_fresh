@@ -1,6 +1,5 @@
 import 'package:hello_fresh/bottom.dart';
 import 'package:hello_fresh/login_password/otp.dart';
-import 'package:hello_fresh/login_password/register.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -9,7 +8,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../utils/colornotifire.dart';
 import '../utils/ctextfield.dart';
 import '../utils/custombutton.dart';
-import '../utils/itextfield.dart';
 import '../utils/media.dart';
 import '../utils/string.dart';
 
@@ -39,14 +37,6 @@ class _LoginState extends State<Login> {
     getdarkmodepreviousstate();
   }
 
-  bool _obscureText = true;
-
-  void _toggle() {
-    setState(() {
-      _obscureText = !_obscureText;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     notifire = Provider.of<ColorNotifire>(context, listen: true);
@@ -64,7 +54,7 @@ class _LoginState extends State<Login> {
                 GestureDetector(
                   onTap: () {
                     Get.to(
-                      const Bottom(),
+                      () => const Bottom(),
                     );
                   },
                   child: Container(
@@ -113,6 +103,7 @@ class _LoginState extends State<Login> {
                     fontSize: height / 40),
               ),
             ),
+            SizedBox(height: height / 100),
             Row(
               children: [
                 SizedBox(

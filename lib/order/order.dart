@@ -1,7 +1,5 @@
 import 'package:hello_fresh/bottom.dart';
-import 'package:hello_fresh/order/all.dart';
-import 'package:hello_fresh/order/delivered.dart';
-import 'package:hello_fresh/order/progress.dart';
+import 'package:hello_fresh/order/orderlist.dart';
 import 'package:hello_fresh/utils/colornotifire.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
@@ -101,62 +99,7 @@ class _OrderState extends State<Order> {
               color: Colors.transparent,
               height: MediaQuery.of(context).size.height / 1.27,
               width: MediaQuery.of(context).size.width,
-              child: DefaultTabController(
-                length: 3,
-                child: Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(20),
-                        ),
-                        color: notifire.getbcolor,
-                      ),
-                      width: MediaQuery.of(context).size.width / 1.1,
-                      child: TabBar(
-                        unselectedLabelColor: notifire.getprocolor,
-                        indicatorSize: TabBarIndicatorSize.tab,
-                        indicator: BoxDecoration(
-                          color: notifire.getprocolor,
-                          borderRadius: const BorderRadius.all(
-                            Radius.circular(20),
-                          ),
-                        ),
-                        tabs: const [
-                          Tab(
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(CustomStrings.all),
-                            ),
-                          ),
-                          Tab(
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(CustomStrings.progress),
-                            ),
-                          ),
-                          Tab(
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(CustomStrings.delivered),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: height / 80),
-                    const Expanded(
-                      child: TabBarView(
-                        children: <Widget>[
-                          All(),
-                          Progresse(),
-                          Delivered(),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              child: const OrderList(),
             ),
           ],
         ),

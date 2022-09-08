@@ -1,5 +1,5 @@
 import 'package:hello_fresh/bottom.dart';
-import 'package:hello_fresh/login_password/login.dart';
+import 'package:hello_fresh/login_password/register.dart';
 import 'package:hello_fresh/utils/colornotifire.dart';
 import 'package:hello_fresh/utils/custombutton.dart';
 import 'package:hello_fresh/utils/media.dart';
@@ -113,7 +113,7 @@ class _OtpState extends State<Otp> {
                           height: height / 100,
                         ),
                         Text(
-                          "+91 9083990020",
+                          "+91 99xxxxx999",
                           style: TextStyle(
                               fontFamily: 'Gilroy Medium',
                               color: notifire.gettextcolor,
@@ -147,7 +147,7 @@ class _OtpState extends State<Otp> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return Bottom();
+                          return const Register();
                         },
                       ),
                     );

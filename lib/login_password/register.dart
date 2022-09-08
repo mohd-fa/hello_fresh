@@ -169,10 +169,7 @@ class _RegisterState extends State<Register> {
                   width: width / 40,
                 ),
                 Customtextfild.textField(
-                  "Mobile",
-                  notifire.getwhitecolor,
-                  width / 1.3,
-                ),
+                    "99xxxxx999", notifire.getwhitecolor, width / 1.3, false),
               ],
             ),
             SizedBox(
@@ -231,43 +228,11 @@ class _RegisterState extends State<Register> {
               child: GestureDetector(
                   onTap: () {
                     Get.to(
-                      const Login(),
+                      () => const Bottom(),
                     );
                   },
                   child: Custombutton.button(
                       notifire.getprocolor, CustomStrings.continues, width)),
-            ),
-            SizedBox(
-              height: height / 30,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  CustomStrings.use,
-                  style: TextStyle(
-                      fontFamily: 'Gilroy Medium',
-                      color: Colors.grey,
-                      fontSize: height / 50),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Get.to(
-                      const Bottom(),
-                    );
-                  },
-                  child: Container(
-                    color: Colors.transparent,
-                    child: Text(
-                      CustomStrings.login,
-                      style: TextStyle(
-                          fontFamily: 'Gilroy Medium',
-                          color: notifire.getprocolor,
-                          fontSize: height / 50),
-                    ),
-                  ),
-                ),
-              ],
             ),
           ],
         ),
