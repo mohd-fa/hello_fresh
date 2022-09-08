@@ -137,7 +137,7 @@ class _OtpState extends State<Otp> {
                 ],
               ),
               SizedBox(
-                height: height / 3.3,
+                height: height / 6,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: width / 15),

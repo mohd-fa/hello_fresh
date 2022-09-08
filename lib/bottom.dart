@@ -1,4 +1,5 @@
 // import 'package:hello_freshresh/home/home.dart';
+import 'package:hello_fresh/home/home.dart';
 import 'package:hello_fresh/order/order.dart';
 import 'package:hello_fresh/utils/media.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +41,7 @@ class _BottomState extends State<Bottom> {
   int _selectedIndex = 0;
 
   final widgetOptions = [
-    const Order(),
+    const Home(),
     const Order(),
     const Order(),
   ];

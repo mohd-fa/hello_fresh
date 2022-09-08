@@ -11,6 +11,9 @@ class Customtextfild {
         enabled: en,
         style: TextStyle(color: textcolor),
         decoration: InputDecoration(
+          focusedBorder: const UnderlineInputBorder(
+              borderSide: BorderSide(color: Color.fromARGB(255, 94, 173, 50))),
+          fillColor: Colors.green,
           hintText: name1,
           hintStyle: const TextStyle(color: Colors.grey),
         ),

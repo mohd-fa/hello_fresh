@@ -53,8 +53,13 @@ class _LoginState extends State<Login> {
                 const Spacer(),
                 GestureDetector(
                   onTap: () {
-                    Get.to(
-                      () => const Bottom(),
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return const Bottom();
+                        },
+                      ),
                     );
                   },
                   child: Container(
@@ -130,13 +135,8 @@ class _LoginState extends State<Login> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return const Otp();
-                      },
-                    ),
+                  Get.to(
+                    const Otp(),
                   );
                 },
                 child: Custombutton.button(

@@ -227,9 +227,11 @@ class _RegisterState extends State<Register> {
               padding: EdgeInsets.symmetric(horizontal: width / 15),
               child: GestureDetector(
                   onTap: () {
-                    Get.to(
-                      () => const Bottom(),
-                    );
+                    Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
+                      builder: (context) {
+                        return const Bottom();
+                      },
+                    ), (Route<dynamic> route) => false);
                   },
                   child: Custombutton.button(
                       notifire.getprocolor, CustomStrings.continues, width)),
