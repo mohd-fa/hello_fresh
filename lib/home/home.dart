@@ -1,5 +1,6 @@
 import 'package:hello_fresh/home/search.dart';
 import 'package:hello_fresh/profile/address.dart';
+import 'package:hello_fresh/profile/location.dart';
 import 'package:hello_fresh/utils/string.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

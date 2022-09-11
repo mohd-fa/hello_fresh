@@ -1,4 +1,4 @@
-import 'package:hello_fresh/spleshscreen.dart';
+import 'package:hello_fresh/view/spleshscreen.dart';
 import 'package:hello_fresh/utils/colornotifire.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

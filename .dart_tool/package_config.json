@@ -206,6 +206,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "searchfield",
+      "rootUri": "file:///home/mohd_fa_/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/searchfield-0.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///home/mohd_fa_/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.15",
       "packageUri": "lib/",
@@ -320,7 +326,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-06T14:06:22.429515Z",
+  "generated": "2022-09-10T13:24:59.461077Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }

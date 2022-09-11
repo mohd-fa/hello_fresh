@@ -1,13 +1,15 @@
 import 'dart:async';
 
+import 'package:hello_fresh/home/bottom.dart';
 import 'package:hello_fresh/login_password/login.dart';
+import 'package:hello_fresh/view/onbonding.dart';
 import 'package:hello_fresh/utils/media.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'utils/colornotifire.dart';
+import '../utils/colornotifire.dart';
 
 class Spleshscreen extends StatefulWidget {
   const Spleshscreen({Key? key}) : super(key: key);
@@ -17,15 +19,26 @@ class Spleshscreen extends StatefulWidget {
 }
 
 class _SpleshscreenState extends State<Spleshscreen> {
+  Future checkFirstSeen() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool _seen = (prefs.getBool('seen')) ?? false;
+    if (_seen)
+      Navigator.pushReplacement(context,
+          PageTransition(type: PageTransitionType.fade, child: const Login()));
+    else {
+      await prefs.setBool('seen', true);
+      Navigator.pushReplacement(
+          context,
+          PageTransition(
+              type: PageTransitionType.fade, child: const Onbonding()));
+    }
+  }
+
   @override
   void initState() {
     super.initState();
     getdarkmodepreviousstate();
-    Timer(
-      const Duration(seconds: 4),
-      () => Navigator.pushReplacement(context,
-          PageTransition(type: PageTransitionType.fade, child: const Login())),
-    );
+    Timer(const Duration(seconds: 4), () => checkFirstSeen());
   }
 
   late ColorNotifire notifire;

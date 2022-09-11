@@ -1,8 +1,9 @@
 // import 'package:hello_fresh/home/bottom.dart';
-import 'package:hello_fresh/bottom.dart';
+import 'package:hello_fresh/home/bottom.dart';
 import 'package:hello_fresh/login_password/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:hello_fresh/profile/location.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -229,7 +230,7 @@ class _RegisterState extends State<Register> {
                   onTap: () {
                     Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
                       builder: (context) {
-                        return const Bottom();
+                        return const Location();
                       },
                     ), (Route<dynamic> route) => false);
                   },

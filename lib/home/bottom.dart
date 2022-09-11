@@ -9,7 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 // import 'message/message.dart';
 // import 'profile/profile.dart';
-import 'utils/colornotifire.dart';
+import '../utils/colornotifire.dart';
 
 class Bottom extends StatefulWidget {
   const Bottom({Key? key}) : super(key: key);

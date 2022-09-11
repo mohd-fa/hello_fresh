@@ -1,4 +1,4 @@
-import 'package:hello_fresh/bottom.dart';
+import 'package:hello_fresh/home/bottom.dart';
 import 'package:hello_fresh/login_password/register.dart';
 import 'package:hello_fresh/utils/colornotifire.dart';
 import 'package:hello_fresh/utils/custombutton.dart';
